@@ -5,19 +5,19 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PropertyComponent } from './components/property/property.component';
 import { StijlComponent } from './components/stijl/stijl.component';
-import { DirectivesComponent } from './components/directives/directives.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     PropertyComponent,
-    StijlComponent,
-    DirectivesComponent
+    StijlComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    CommonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

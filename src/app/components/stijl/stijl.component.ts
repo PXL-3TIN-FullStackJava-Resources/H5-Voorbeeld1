@@ -6,21 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./stijl.component.css']
 })
 export class StijlComponent implements OnInit {
-  stijlen: Object[];
+  hasBorder: boolean = false;
+  isRed: boolean = false;
+  isBold: boolean = false;
 
   constructor() { }
 
-  ngOnInit() {
-    this.stijlen = [
-      { border: '2px solid blue', fontSize: '16px' },
-      { border: '2px dotted red', fontSize: '16px' },
-      { border: '4px solid green', fontSize: '16px'},
-      { fontSize: '16px', backgroundColor: '#efefef' }
-    ];
-  }
-
-  randomStijl() {
-    return this.stijlen[Math.floor(Math.random() * this.stijlen.length)]
+  ngOnInit(): void {
+  
   }
 
 }

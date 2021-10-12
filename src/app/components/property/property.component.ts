@@ -6,15 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./property.component.css']
 })
 export class PropertyComponent implements OnInit {
-  toon: boolean;
-  bgcolor: string;
-  teller: number;
+  toon: boolean = true;
+  bgcolor!: string;
+  teller: number = 1;
 
   constructor() { }
 
   ngOnInit() {
-    this.toon = true;
-    this.teller = 1;
+
   }
 
   isChecked(){
